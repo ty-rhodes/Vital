@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		775A77DA2C022AB100A8ED06 /* StepsChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A77D92C022AB100A8ED06 /* StepsChart.swift */; };
+		775A77DC2C022CCF00A8ED06 /* HealthKitPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A77DB2C022CCF00A8ED06 /* HealthKitPermissionView.swift */; };
+		77A785B72C264DC20091296B /* ChartEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A785B62C264DC20091296B /* ChartEmptyView.swift */; };
+		77AC2AA32BFA9021007E4F77 /* VitalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC2AA22BFA9021007E4F77 /* VitalApp.swift */; };
+		77AC2AA72BFA9022007E4F77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77AC2AA62BFA9022007E4F77 /* Assets.xcassets */; };
+		77AC2AAA2BFA9022007E4F77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77AC2AA92BFA9022007E4F77 /* Preview Assets.xcassets */; };
+		77AC2AB12BFA9118007E4F77 /* HRMonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC2AB02BFA9118007E4F77 /* HRMonitorView.swift */; };
+		77AC2AB32BFA914E007E4F77 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC2AB22BFA914E007E4F77 /* AppTabView.swift */; };
+		77AC2AB62BFA9371007E4F77 /* HealthMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC2AB52BFA9371007E4F77 /* HealthMetric.swift */; };
+		77AC2AB92BFA93C1007E4F77 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC2AB82BFA93C1007E4F77 /* HealthKitManager.swift */; };
+		77AC2ABC2BFA9490007E4F77 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC2ABB2BFA9490007E4F77 /* MockData.swift */; };
+		77AC2AC02BFA9592007E4F77 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC2ABF2BFA9592007E4F77 /* Date+Ext.swift */; };
+		77AC2AC22BFA95CB007E4F77 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC2AC12BFA95CB007E4F77 /* AccountView.swift */; };
+		77AC2AC42BFA96B0007E4F77 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC2AC32BFA96B0007E4F77 /* DashboardView.swift */; };
+		77AC2AC62BFEB630007E4F77 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC2AC52BFEB630007E4F77 /* Constants.swift */; };
+		77BF6FE92C093F490049298E /* HeartRateChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF6FE82C093F490049298E /* HeartRateChart.swift */; };
+		77BF6FEC2C0944850049298E /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF6FEB2C0944850049298E /* HapticsManager.swift */; };
+		77C8D7412C13738E00B3C8A2 /* HeartRateListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C8D7402C13738E00B3C8A2 /* HeartRateListData.swift */; };
+		77C8D7432C13739D00B3C8A2 /* StepsListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C8D7422C13739D00B3C8A2 /* StepsListData.swift */; };
+		77C8D7472C190D7200B3C8A2 /* HeartRateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C8D7462C190D7200B3C8A2 /* HeartRateManager.swift */; };
+		77EE5D692C24E482009A7FE3 /* CaloriesListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE5D682C24E482009A7FE3 /* CaloriesListData.swift */; };
+		77EE5D6B2C24E584009A7FE3 /* CaloriesChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EE5D6A2C24E584009A7FE3 /* CaloriesChart.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		775A77D92C022AB100A8ED06 /* StepsChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsChart.swift; sourceTree = "<group>"; };
+		775A77DB2C022CCF00A8ED06 /* HealthKitPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPermissionView.swift; sourceTree = "<group>"; };
+		775A77DD2C0231D600A8ED06 /* Vital.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vital.entitlements; sourceTree = "<group>"; };
+		77A785B62C264DC20091296B /* ChartEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartEmptyView.swift; sourceTree = "<group>"; };
+		77AC2A9F2BFA9021007E4F77 /* Vital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vital.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77AC2AA22BFA9021007E4F77 /* VitalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalApp.swift; sourceTree = "<group>"; };
+		77AC2AA62BFA9022007E4F77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77AC2AA92BFA9022007E4F77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		77AC2AB02BFA9118007E4F77 /* HRMonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRMonitorView.swift; sourceTree = "<group>"; };
+		77AC2AB22BFA914E007E4F77 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		77AC2AB52BFA9371007E4F77 /* HealthMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMetric.swift; sourceTree = "<group>"; };
+		77AC2AB82BFA93C1007E4F77 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		77AC2ABB2BFA9490007E4F77 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		77AC2ABF2BFA9592007E4F77 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		77AC2AC12BFA95CB007E4F77 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		77AC2AC32BFA96B0007E4F77 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		77AC2AC52BFEB630007E4F77 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		77BF6FE82C093F490049298E /* HeartRateChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateChart.swift; sourceTree = "<group>"; };
+		77BF6FEB2C0944850049298E /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		77C8D7402C13738E00B3C8A2 /* HeartRateListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateListData.swift; sourceTree = "<group>"; };
+		77C8D7422C13739D00B3C8A2 /* StepsListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsListData.swift; sourceTree = "<group>"; };
+		77C8D7462C190D7200B3C8A2 /* HeartRateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateManager.swift; sourceTree = "<group>"; };
+		77EE5D682C24E482009A7FE3 /* CaloriesListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesListData.swift; sourceTree = "<group>"; };
+		77EE5D6A2C24E584009A7FE3 /* CaloriesChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesChart.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77AC2A9C2BFA9021007E4F77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		775A77D82C022A9D00A8ED06 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				77BF6FE82C093F490049298E /* HeartRateChart.swift */,
+				775A77D92C022AB100A8ED06 /* StepsChart.swift */,
+				77EE5D6A2C24E584009A7FE3 /* CaloriesChart.swift */,
+				77A785B62C264DC20091296B /* ChartEmptyView.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		77AC2A962BFA9021007E4F77 = {
+			isa = PBXGroup;
+			children = (
+				77AC2AA12BFA9021007E4F77 /* Vital */,
+				77AC2AA02BFA9021007E4F77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77AC2AA02BFA9021007E4F77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77AC2A9F2BFA9021007E4F77 /* Vital.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77AC2AA12BFA9021007E4F77 /* Vital */ = {
+			isa = PBXGroup;
+			children = (
+				775A77DD2C0231D600A8ED06 /* Vital.entitlements */,
+				77BF6FEA2C0944010049298E /* Base */,
+				77AC2AB42BFA9363007E4F77 /* Model */,
+				77C8D73E2C13735E00B3C8A2 /* Views */,
+				77AC2ABD2BFA94AA007E4F77 /* Screens */,
+				77AC2AA22BFA9021007E4F77 /* VitalApp.swift */,
+				77AC2AA62BFA9022007E4F77 /* Assets.xcassets */,
+				77AC2AA82BFA9022007E4F77 /* Preview Content */,
+			);
+			path = Vital;
+			sourceTree = "<group>";
+		};
+		77AC2AA82BFA9022007E4F77 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				77AC2AA92BFA9022007E4F77 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		77AC2AB42BFA9363007E4F77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77AC2AB52BFA9371007E4F77 /* HealthMetric.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		77AC2AB72BFA93B5007E4F77 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				77AC2AB82BFA93C1007E4F77 /* HealthKitManager.swift */,
+				77BF6FEB2C0944850049298E /* HapticsManager.swift */,
+				77C8D7462C190D7200B3C8A2 /* HeartRateManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		77AC2ABA2BFA946F007E4F77 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				77AC2ABB2BFA9490007E4F77 /* MockData.swift */,
+				77AC2AC52BFEB630007E4F77 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		77AC2ABD2BFA94AA007E4F77 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				77AC2AB22BFA914E007E4F77 /* AppTabView.swift */,
+				77AC2AC32BFA96B0007E4F77 /* DashboardView.swift */,
+				77AC2AB02BFA9118007E4F77 /* HRMonitorView.swift */,
+				77AC2AC12BFA95CB007E4F77 /* AccountView.swift */,
+				775A77DB2C022CCF00A8ED06 /* HealthKitPermissionView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		77AC2ABE2BFA957F007E4F77 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				77AC2ABF2BFA9592007E4F77 /* Date+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		77BF6FEA2C0944010049298E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				77AC2ABE2BFA957F007E4F77 /* Extensions */,
+				77AC2ABA2BFA946F007E4F77 /* Utilities */,
+				77AC2AB72BFA93B5007E4F77 /* Managers */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		77C8D73E2C13735E00B3C8A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				775A77D82C022A9D00A8ED06 /* Charts */,
+				77C8D73F2C13737600B3C8A2 /* Lists */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		77C8D73F2C13737600B3C8A2 /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				77C8D7402C13738E00B3C8A2 /* HeartRateListData.swift */,
+				77C8D7422C13739D00B3C8A2 /* StepsListData.swift */,
+				77EE5D682C24E482009A7FE3 /* CaloriesListData.swift */,
+			);
+			path = Lists;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77AC2A9E2BFA9021007E4F77 /* Vital */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77AC2AAD2BFA9022007E4F77 /* Build configuration list for PBXNativeTarget "Vital" */;
+			buildPhases = (
+				77AC2A9B2BFA9021007E4F77 /* Sources */,
+				77AC2A9C2BFA9021007E4F77 /* Frameworks */,
+				77AC2A9D2BFA9021007E4F77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vital;
+			productName = Vital;
+			productReference = 77AC2A9F2BFA9021007E4F77 /* Vital.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77AC2A972BFA9021007E4F77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					77AC2A9E2BFA9021007E4F77 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 77AC2A9A2BFA9021007E4F77 /* Build configuration list for PBXProject "Vital" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77AC2A962BFA9021007E4F77;
+			productRefGroup = 77AC2AA02BFA9021007E4F77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77AC2A9E2BFA9021007E4F77 /* Vital */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77AC2A9D2BFA9021007E4F77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77AC2AAA2BFA9022007E4F77 /* Preview Assets.xcassets in Resources */,
+				77AC2AA72BFA9022007E4F77 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77AC2A9B2BFA9021007E4F77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77AC2AB12BFA9118007E4F77 /* HRMonitorView.swift in Sources */,
+				77AC2ABC2BFA9490007E4F77 /* MockData.swift in Sources */,
+				77BF6FEC2C0944850049298E /* HapticsManager.swift in Sources */,
+				77C8D7432C13739D00B3C8A2 /* StepsListData.swift in Sources */,
+				77AC2AB32BFA914E007E4F77 /* AppTabView.swift in Sources */,
+				77C8D7472C190D7200B3C8A2 /* HeartRateManager.swift in Sources */,
+				77AC2AA32BFA9021007E4F77 /* VitalApp.swift in Sources */,
+				77AC2AC42BFA96B0007E4F77 /* DashboardView.swift in Sources */,
+				77AC2AC62BFEB630007E4F77 /* Constants.swift in Sources */,
+				77AC2AC22BFA95CB007E4F77 /* AccountView.swift in Sources */,
+				77AC2AB92BFA93C1007E4F77 /* HealthKitManager.swift in Sources */,
+				77AC2AC02BFA9592007E4F77 /* Date+Ext.swift in Sources */,
+				77EE5D6B2C24E584009A7FE3 /* CaloriesChart.swift in Sources */,
+				77BF6FE92C093F490049298E /* HeartRateChart.swift in Sources */,
+				775A77DA2C022AB100A8ED06 /* StepsChart.swift in Sources */,
+				77A785B72C264DC20091296B /* ChartEmptyView.swift in Sources */,
+				775A77DC2C022CCF00A8ED06 /* HealthKitPermissionView.swift in Sources */,
+				77EE5D692C24E482009A7FE3 /* CaloriesListData.swift in Sources */,
+				77AC2AB62BFA9371007E4F77 /* HealthMetric.swift in Sources */,
+				77C8D7412C13738E00B3C8A2 /* HeartRateListData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		77AC2AAB2BFA9022007E4F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77AC2AAC2BFA9022007E4F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77AC2AAE2BFA9022007E4F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Vital/Vital.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vital/Preview Content\"";
+				DEVELOPMENT_TEAM = B87MBXYUK2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app shows your heart rate, steps, and calories burned data in an interactive chart.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app allows you to add heart rate and step data to Apple Health";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylerrhodes.Vital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77AC2AAF2BFA9022007E4F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Vital/Vital.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vital/Preview Content\"";
+				DEVELOPMENT_TEAM = B87MBXYUK2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app shows your heart rate, steps, and calories burned data in an interactive chart.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app allows you to add heart rate and step data to Apple Health";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tylerrhodes.Vital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77AC2A9A2BFA9021007E4F77 /* Build configuration list for PBXProject "Vital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77AC2AAB2BFA9022007E4F77 /* Debug */,
+				77AC2AAC2BFA9022007E4F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77AC2AAD2BFA9022007E4F77 /* Build configuration list for PBXNativeTarget "Vital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77AC2AAE2BFA9022007E4F77 /* Debug */,
+				77AC2AAF2BFA9022007E4F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77AC2A972BFA9021007E4F77 /* Project object */;
+}
