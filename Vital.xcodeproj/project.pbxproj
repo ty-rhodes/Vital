@@ -423,7 +423,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app shows your heart rate, steps, and calories burned data in an interactive chart.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app allows you to add heart rate and step data to Apple Health";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app allows you to add heart rate, steps, and calories burned data to Apple Health";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -456,7 +456,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app shows your heart rate, steps, and calories burned data in an interactive chart.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app allows you to add heart rate and step data to Apple Health";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app allows you to add heart rate, steps, and calories burned data to Apple Health";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

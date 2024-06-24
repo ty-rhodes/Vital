@@ -16,14 +16,18 @@ struct HeartRateListData: View {
     
     var body: some View {
         VStack {
-            List(MockData.heartrates) { data in
-                HStack {
-                    Text(data.date.displayFormat)
-                    Spacer()
-                    Text("\(data.value, format: .number.precision(.fractionLength(0))) bpm")
+            if hkManager.heartRateData.isEmpty {
+                ChartEmptyView(systemImageName: "waveform.path.ecg", title: "No Data", description: "There is no resting heart rate data to pull from the Health App")
+            } else {
+                List(hkManager.heartRateData.reversed()) { data in
+                    HStack {
+                        Text(data.date.displayFormat)
+                        Spacer()
+                        Text("\(data.value, format: .number.precision(.fractionLength(0))) bpm")
+                    }
                 }
+                .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
             }
-            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         }
         .padding(.horizontal)
         .listStyle(.inset)
