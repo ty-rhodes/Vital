@@ -17,7 +17,7 @@ struct HealthKitPermissionView: View {
     @Binding var hasSeen: Bool
     
     var description = """
-This app displays your heart rate, steps, and calories burned data in interactive charts. Your data is private and secured.
+This app displays your resting heart rate, steps, and calories burned data in interactive charts. Your data is private and secured.
 """
     
     var body: some View {

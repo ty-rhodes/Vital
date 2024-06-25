@@ -49,7 +49,7 @@ struct DashboardView: View {
                         // MARK: - Chart Data
                         switch selectedStat {
                         case .heartrate:
-                            HeartRateChart(selectedStat: selectedStat, chartData: MockData.heartrates)
+                            HeartRateChart(selectedStat: selectedStat, chartData: hkManager.heartRateData)
                         case .steps:
                             StepsChart(selectedStat: selectedStat, chartData: hkManager.stepData)
                         case .calories:
@@ -92,6 +92,9 @@ struct DashboardView: View {
                         Divider()
                         CaloriesListData()
                     }
+                }
+                .onAppear {
+                    isShowingPermissionPrimingSheet = !hasSeenPermissionPriming
                 }
                 .navigationTitle("Health Data")
                 .navigationBarTitleDisplayMode(.inline)
