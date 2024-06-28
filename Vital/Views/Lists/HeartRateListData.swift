@@ -34,9 +34,13 @@ struct HeartRateListData: View {
         .foregroundStyle(.pink.gradient)
         .shadow(color: .primary.opacity(0.2), radius: 10, x: 0, y: 5)
         .task {
-//            await hkManager.fetchRestingHeartRate()
-            isShowingPermissionPrimingSheet = !hasSeenPermissionPriming
-    }
+            do {
+                try await hkManager.fetchRestingHeartRate()
+                isShowingPermissionPrimingSheet = !hasSeenPermissionPriming
+            } catch {
+                print("No heart rate list data")
+            }
+        }
     }
 }
 

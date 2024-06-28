@@ -34,8 +34,13 @@ struct CaloriesListData: View {
         .foregroundStyle(.orange.gradient)
         .shadow(color: .primary.opacity(0.2), radius: 10, x: 0, y: 5)
         .task {
-//            await hkManager.fetchCalories()
-            isShowingPermissionPrimingSheet = !hasSeenPermissionPriming
+            do {
+//                await hkManager.fetchCalories()
+                try await hkManager.fetchCalories()
+                isShowingPermissionPrimingSheet = !hasSeenPermissionPriming
+            } catch {
+                print("No calorie list data")
+            }
     }
     }}
 

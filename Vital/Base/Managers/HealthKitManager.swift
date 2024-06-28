@@ -26,7 +26,7 @@ import Observation
     var calorieData: [HealthMetric] = []
     
     // MARK: - Functions
-    func fetchRestingHeartRate() async {
+    func fetchRestingHeartRate() async throws -> [HealthMetric] {
         let calendar = Calendar.current
         let today = calendar.startOfDay(for: .now)
         let endDate = calendar.date(byAdding: .day, value: 1, to: today)!
@@ -35,20 +35,28 @@ import Observation
         let queryPredicate = HKQuery.predicateForSamples(withStart: startDate, end: endDate)
         let samplePredicate = HKSamplePredicate.quantitySample(type: HKQuantityType(.restingHeartRate), predicate: queryPredicate)
         let heartRateQuery = HKStatisticsCollectionQueryDescriptor(predicate: samplePredicate,
-                                                               options: .cumulativeSum,
+                                                                   options: .discreteAverage,
                                                                anchorDate: endDate,
                                                                intervalComponents: .init(day: 1))
-        do {
-            let heartRateCounts = try await heartRateQuery.result(for: store)
-            heartRateData = heartRateCounts.statistics().map {
-                .init(date: $0.startDate, value: $0.sumQuantity()?.doubleValue(for: .count()) ?? 0)
+//        do {
+//            let heartRateCounts = try await heartRateQuery.result(for: store)
+//            heartRateData = heartRateCounts.statistics().map {
+//                .init(date: $0.startDate, value: $0.sumQuantity()?.doubleValue(for: .count()) ?? 0)
+//            }
+//        } catch {
+//            
+//        }
+        
+        for try await result in heartRateQuery.results(for: store) {
+            heartRateData = result.statisticsCollection.statistics().map{
+                HealthMetric(date: $0.startDate, value: $0.sumQuantity()?.doubleValue(for: .count()) ?? 0)
             }
-        } catch {
-            
         }
+        
+        return heartRateData
     }
     
-    func fetchStepCount() async {
+    func fetchStepCount() async throws -> [HealthMetric] {
         let calendar = Calendar.current
         let today = calendar.startOfDay(for: .now)
         let endDate = calendar.date(byAdding: .day, value: 1, to: today)!
@@ -60,36 +68,70 @@ import Observation
                                                                options: .cumulativeSum,
                                                                anchorDate: endDate,
                                                                intervalComponents: .init(day: 1))
-        do {
-            let stepCounts = try await stepsQuery.result(for: store)
-            stepData = stepCounts.statistics().map {
-                .init(date: $0.startDate, value: $0.sumQuantity()?.doubleValue(for: .count()) ?? 0)
+//        do {
+//            let stepCounts = try await stepsQuery.result(for: store)
+//            stepData = stepCounts.statistics().map {
+//                .init(date: $0.startDate, value: $0.sumQuantity()?.doubleValue(for: .count()) ?? 0)
+//            }
+//        } catch {
+//            
+//        }
+        
+        for try await result in stepsQuery.results(for: store) {
+            stepData = result.statisticsCollection.statistics().map{
+                HealthMetric(date: $0.startDate, value: $0.sumQuantity()?.doubleValue(for: .count()) ?? 0)
             }
-        } catch {
-            
         }
+        
+        return stepData
     }
     
-    func fetchCalories() async {
+//    func fetchCalories() async {
+//        let calendar = Calendar.current
+//        let today = calendar.startOfDay(for: .now)
+//        let endDate = calendar.date(byAdding: .day, value: 1, to: today)!
+//        let startDate = calendar.date(byAdding: .day, value: -28, to: endDate)
+//        
+//        let queryPredicate = HKQuery.predicateForSamples(withStart: startDate, end: endDate)
+//        let samplePredicate = HKSamplePredicate.quantitySample(type: HKQuantityType(.activeEnergyBurned), predicate: queryPredicate)
+//        let calorieQuery = HKStatisticsCollectionQueryDescriptor(predicate: samplePredicate,
+//                                                               options: .cumulativeSum,
+//                                                               anchorDate: endDate,
+//                                                               intervalComponents: .init(day: 1))
+//        do {
+//            let calorieCounts = try await calorieQuery.result(for: store)
+//            calorieData = calorieCounts.statistics().map {
+//                .init(date: $0.startDate, value: $0.sumQuantity()?.doubleValue(for: .count()) ?? 0)
+//            }
+//        } catch {
+//            
+//        }
+//    }
+    
+    func fetchCalories() async throws -> [HealthMetric] {
         let calendar = Calendar.current
         let today = calendar.startOfDay(for: .now)
         let endDate = calendar.date(byAdding: .day, value: 1, to: today)!
         let startDate = calendar.date(byAdding: .day, value: -28, to: endDate)
-        
+            
+            
         let queryPredicate = HKQuery.predicateForSamples(withStart: startDate, end: endDate)
         let samplePredicate = HKSamplePredicate.quantitySample(type: HKQuantityType(.activeEnergyBurned), predicate: queryPredicate)
-        let calorieQuery = HKStatisticsCollectionQueryDescriptor(predicate: samplePredicate,
-                                                               options: .cumulativeSum,
-                                                               anchorDate: endDate,
-                                                               intervalComponents: .init(day: 1))
-        do {
-            let calorieCounts = try await calorieQuery.result(for: store)
-            calorieData = calorieCounts.statistics().map {
-                .init(date: $0.startDate, value: $0.sumQuantity()?.doubleValue(for: .count()) ?? 0)
-            }
-        } catch {
             
+            let caloriesQuery = HKStatisticsCollectionQueryDescriptor(
+                predicate: samplePredicate,
+                options: .cumulativeSum,
+                anchorDate: endDate,
+                intervalComponents: .init(day: 1)
+            )
+            
+            for try await result in caloriesQuery.results(for: store) {
+                calorieData = result.statisticsCollection.statistics().map{
+                    HealthMetric(date: $0.startDate, value: $0.sumQuantity()?.doubleValue(for: .kilocalorie()) ?? 0)
+                }
+            }
+            
+            return calorieData
         }
-    }
 
 }
