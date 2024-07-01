@@ -14,7 +14,6 @@
 		77AC2AA32BFA9021007E4F77 /* VitalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC2AA22BFA9021007E4F77 /* VitalApp.swift */; };
 		77AC2AA72BFA9022007E4F77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77AC2AA62BFA9022007E4F77 /* Assets.xcassets */; };
 		77AC2AAA2BFA9022007E4F77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77AC2AA92BFA9022007E4F77 /* Preview Assets.xcassets */; };
-		77AC2AB12BFA9118007E4F77 /* HRMonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC2AB02BFA9118007E4F77 /* HRMonitorView.swift */; };
 		77AC2AB32BFA914E007E4F77 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC2AB22BFA914E007E4F77 /* AppTabView.swift */; };
 		77AC2AB62BFA9371007E4F77 /* HealthMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC2AB52BFA9371007E4F77 /* HealthMetric.swift */; };
 		77AC2AB92BFA93C1007E4F77 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC2AB82BFA93C1007E4F77 /* HealthKitManager.swift */; };
@@ -42,7 +41,6 @@
 		77AC2AA22BFA9021007E4F77 /* VitalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalApp.swift; sourceTree = "<group>"; };
 		77AC2AA62BFA9022007E4F77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77AC2AA92BFA9022007E4F77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		77AC2AB02BFA9118007E4F77 /* HRMonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRMonitorView.swift; sourceTree = "<group>"; };
 		77AC2AB22BFA914E007E4F77 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
 		77AC2AB52BFA9371007E4F77 /* HealthMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMetric.swift; sourceTree = "<group>"; };
 		77AC2AB82BFA93C1007E4F77 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
@@ -154,7 +152,6 @@
 			children = (
 				77AC2AB22BFA914E007E4F77 /* AppTabView.swift */,
 				77AC2AC32BFA96B0007E4F77 /* DashboardView.swift */,
-				77AC2AB02BFA9118007E4F77 /* HRMonitorView.swift */,
 				77AC2AC12BFA95CB007E4F77 /* AccountView.swift */,
 				775A77DB2C022CCF00A8ED06 /* HealthKitPermissionView.swift */,
 			);
@@ -269,7 +266,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77AC2AB12BFA9118007E4F77 /* HRMonitorView.swift in Sources */,
 				77AC2ABC2BFA9490007E4F77 /* MockData.swift in Sources */,
 				77BF6FEC2C0944850049298E /* HapticsManager.swift in Sources */,
 				77C8D7432C13739D00B3C8A2 /* StepsListData.swift in Sources */,

@@ -14,8 +14,6 @@ struct AppTabView: View {
         TabView {
             DashboardView(metric: .heartrate)
                 .tabItem { Label("Data", systemImage: "heart.text.square") }
-            HRMonitorView()
-                .tabItem { Label("HRMonitor", systemImage: "waveform.path.ecg.rectangle") }
             AccountView()
                 .tabItem { Label("Account", systemImage: "person") }
         }
