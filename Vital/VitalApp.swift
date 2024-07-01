@@ -16,7 +16,7 @@ struct VitalApp: App {
         WindowGroup {
             AppTabView()
                 .environment(hkmanager)
-                .preferredColorScheme(.light)
+//                .preferredColorScheme(.light)
         }
     }
 }

@@ -15,7 +15,7 @@ struct AppTabView: View {
             DashboardView(metric: .heartrate)
                 .tabItem { Label("Data", systemImage: "heart.text.square") }
             AccountView()
-                .tabItem { Label("Account", systemImage: "person") }
+                .tabItem { Label("Settings", systemImage: "gearshape") }
         }
         .tint(Color.pink.gradient)
     }

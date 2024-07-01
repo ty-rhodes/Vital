@@ -13,24 +13,21 @@ struct AccountView: View {
             VStack {
                 Form {
                     Section(header: Label("Legal", systemImage: "scroll")
-                        .foregroundColor(.secondary)){
+                        .foregroundStyle(.secondary)) {
                             HStack {
                                 Symbols.link
                                 Link("Terms Of Service", destination: URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!)
                             }
-                            .font(.system(size: 16, weight: .light))
-                            .foregroundColor(.black)
-                            
                             HStack {
                                 Symbols.link
                                 Link("Privacy Policy", destination: URL(string: "https://sites.google.com/view/ritualbrewandrenew/home")!)
                             }
-                            .font(.system(size: 16, weight: .light))
-                            .foregroundColor(.black)
                         }
+                        .font(.system(size: 16, weight: .light))
+                        .foregroundStyle(.primary)
                 }
             }
-            .navigationTitle("Account")
+            .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)
         }
     }

@@ -74,7 +74,7 @@ struct DashboardView: View {
                             .font(.title3)
                             .shadow(color: .secondary.opacity(0.3), radius: 1, x: 1, y: 1)
                         Divider()
-                            .frame(width: 368)
+                            .frame(width: 350)
                         HeartRateListData()
                     case .steps:
                         Text("Steps List Data")
@@ -83,7 +83,7 @@ struct DashboardView: View {
                             .font(.title3)
                             .shadow(color: .secondary.opacity(0.3), radius: 1, x: 1, y: 1)
                         Divider()
-                            .frame(width: 368)
+                            .frame(width: 350)
                         StepsListData()
                     case .calories:
                         Text("Calories List Data")
@@ -92,7 +92,7 @@ struct DashboardView: View {
                             .font(.title3)
                             .shadow(color: .secondary.opacity(0.3), radius: 1, x: 1, y: 1)
                         Divider()
-                            .frame(width: 368)
+                            .frame(width: 350)
                         CaloriesListData()
                     }
                 }
