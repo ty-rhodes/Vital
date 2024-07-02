@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct HealthMetric: Identifiable {
+struct HealthMetric: Identifiable, Hashable {
     let id = UUID()
     let date: Date
     let value: Double
