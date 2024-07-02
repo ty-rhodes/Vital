@@ -17,7 +17,7 @@ struct AccountView: View {
                             HStack {
                                 Symbols.link
                                 VStack(alignment: .leading) {
-                                    Link("Heart Health", destination: URL(string: "https://www.heart.org/en/healthy-living/fitness/fitness-basics/target-heart-rates")!)
+                                    Link("Heart Health", destination: Links.heartLink!)
                                         .font(.system(size: 18, weight: .medium))
                                     Text("Maximum and target heart rate by age.")
                                         .font(.system(size: 14, weight: .light))
@@ -27,7 +27,7 @@ struct AccountView: View {
                             HStack {
                                 Symbols.link
                                 VStack(alignment: .leading) {
-                                    Link("Importance of Daily Steps", destination: URL(string: "https://www.nih.gov/news-events/nih-research-matters/number-steps-day-more-important-step-intensity")!)
+                                    Link("Importance of Daily Steps", destination: Links.stepsLink!)
                                         .font(.system(size: 18, weight: .medium))
                                     Text("The low cost of daily physical activity.")
                                         .font(.system(size: 14, weight: .light))
@@ -37,7 +37,7 @@ struct AccountView: View {
                             HStack {
                                 Symbols.link
                                 VStack(alignment: .leading) {
-                                    Link("Calories Burned by Age", destination: URL(string: "https://health.clevelandclinic.org/calories-burned-in-a-day")!)
+                                    Link("Calories Burned by Age", destination: Links.caloriesLink!)
                                         .font(.system(size: 18, weight: .medium))
                                     Text("Average calories burned by age.")
                                         .font(.system(size: 14, weight: .light))
