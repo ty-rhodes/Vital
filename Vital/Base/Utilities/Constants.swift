@@ -12,8 +12,10 @@ enum Symbols {
     static let link      = Image(systemName: "link")
 }
 
-enum Links {
+enum Hyperlinks {
     static let heartLink = URL(string: "https://www.heart.org/en/healthy-living/fitness/fitness-basics/target-heart-rates")
     static let stepsLink = URL(string: "https://www.nih.gov/news-events/nih-research-matters/number-steps-day-more-important-step-intensity")
     static let caloriesLink = URL(string: "https://health.clevelandclinic.org/calories-burned-in-a-day")
+    static let termsOfService = URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")
+    static let privacyPolicy = URL(string: "https://sites.google.com/d/1sR_BGq4HK9F_oAkrNDxx5bBMppbiKLKH/p/10_EVKhDYDAX-S7kONJozlSYPUY1ivuOG/edit")
 }
