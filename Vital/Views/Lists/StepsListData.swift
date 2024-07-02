@@ -48,3 +48,24 @@ struct StepsListData: View {
     StepsListData()
         .environment(HealthKitManager())
 }
+
+struct StepsListCell: View {
+    
+    var metric: HealthMetric
+    
+    var body: some View {
+        HStack {
+            Text(metric.date.displayFormat)
+                .fontWeight(.light)
+                .lineLimit(2)
+                .minimumScaleFactor(0.5)
+            
+            Spacer()
+                
+            Text("\(metric.value, format: .number.precision(.fractionLength(0))) steps")
+                .fontWeight(.light)
+                .lineLimit(2)
+                .minimumScaleFactor(0.5)
+        }
+    }
+}

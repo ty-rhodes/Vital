@@ -12,18 +12,52 @@ struct AccountView: View {
         NavigationStack {
             VStack {
                 Form {
+                    Section(header: Label("General Health Info", systemImage: "scroll")
+                        .foregroundStyle(.secondary)) {
+                            HStack {
+                                Symbols.link
+                                VStack(alignment: .leading) {
+                                    Link("Heart Health", destination: Hyperlinks.heartLink!)
+                                        .font(.system(size: 18, weight: .medium))
+                                    Text("Maximum and target heart rate by age.")
+                                        .font(.system(size: 14, weight: .light))
+                                }
+                            }
+                            
+                            HStack {
+                                Symbols.link
+                                VStack(alignment: .leading) {
+                                    Link("Importance of Daily Steps", destination: Hyperlinks.stepsLink!)
+                                        .font(.system(size: 18, weight: .medium))
+                                    Text("The low cost of daily physical activity.")
+                                        .font(.system(size: 14, weight: .light))
+                                }
+                            }
+                            
+                            HStack {
+                                Symbols.link
+                                VStack(alignment: .leading) {
+                                    Link("Calories Burned by Age", destination: Hyperlinks.caloriesLink!)
+                                        .font(.system(size: 18, weight: .medium))
+                                    Text("Average calories burned by age.")
+                                        .font(.system(size: 14, weight: .light))
+                                }
+                            }
+
+                        }
+                        .foregroundStyle(.primary)
+                    
                     Section(header: Label("Legal", systemImage: "scroll")
                         .foregroundStyle(.secondary)) {
                             HStack {
                                 Symbols.link
-                                Link("Terms Of Service", destination: URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!)
+                                Link("Terms Of Service", destination: Hyperlinks.termsOfService!)
                             }
                             HStack {
                                 Symbols.link
-                                Link("Privacy Policy", destination: URL(string: "https://sites.google.com/view/ritualbrewandrenew/home")!)
+                                Link("Privacy Policy", destination: Hyperlinks.privacyPolicy!)
                             }
                         }
-                        .font(.system(size: 16, weight: .light))
                         .foregroundStyle(.primary)
                 }
             }
