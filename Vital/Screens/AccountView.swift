@@ -19,6 +19,7 @@ struct AccountView: View {
                                 VStack(alignment: .leading) {
                                     Link("Heart Health", destination: Hyperlinks.heartLink!)
                                         .font(.system(size: 18, weight: .medium))
+                                        .foregroundStyle(.pink.gradient)
                                     Text("Maximum and target heart rate by age.")
                                         .font(.system(size: 14, weight: .light))
                                 }
@@ -29,6 +30,7 @@ struct AccountView: View {
                                 VStack(alignment: .leading) {
                                     Link("Importance of Daily Steps", destination: Hyperlinks.stepsLink!)
                                         .font(.system(size: 18, weight: .medium))
+                                        .foregroundStyle(.mint.gradient)
                                     Text("The low cost of daily physical activity.")
                                         .font(.system(size: 14, weight: .light))
                                 }
@@ -39,6 +41,7 @@ struct AccountView: View {
                                 VStack(alignment: .leading) {
                                     Link("Calories Burned by Age", destination: Hyperlinks.caloriesLink!)
                                         .font(.system(size: 18, weight: .medium))
+                                        .foregroundStyle(.orange.gradient)
                                     Text("Average calories burned by age.")
                                         .font(.system(size: 14, weight: .light))
                                 }
