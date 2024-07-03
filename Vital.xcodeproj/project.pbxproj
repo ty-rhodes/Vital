@@ -11,6 +11,8 @@
 		775A77DA2C022AB100A8ED06 /* StepsChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A77D92C022AB100A8ED06 /* StepsChart.swift */; };
 		775A77DC2C022CCF00A8ED06 /* HealthKitPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A77DB2C022CCF00A8ED06 /* HealthKitPermissionView.swift */; };
 		777053102C3582BA00043020 /* OnboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7770530F2C3582BA00043020 /* OnboardScreen.swift */; };
+		777053162C35D48C00043020 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777053152C35D48C00043020 /* TabBar.swift */; };
+		7770531A2C35D52600043020 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777053192C35D52600043020 /* TabItem.swift */; };
 		77A785B72C264DC20091296B /* ChartEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A785B62C264DC20091296B /* ChartEmptyView.swift */; };
 		77AC2AA32BFA9021007E4F77 /* VitalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AC2AA22BFA9021007E4F77 /* VitalApp.swift */; };
 		77AC2AA72BFA9022007E4F77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77AC2AA62BFA9022007E4F77 /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 		775A77DB2C022CCF00A8ED06 /* HealthKitPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPermissionView.swift; sourceTree = "<group>"; };
 		775A77DD2C0231D600A8ED06 /* Vital.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vital.entitlements; sourceTree = "<group>"; };
 		7770530F2C3582BA00043020 /* OnboardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardScreen.swift; sourceTree = "<group>"; };
+		777053152C35D48C00043020 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		777053192C35D52600043020 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		77A785B62C264DC20091296B /* ChartEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartEmptyView.swift; sourceTree = "<group>"; };
 		77AC2A9F2BFA9021007E4F77 /* Vital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77AC2AA22BFA9021007E4F77 /* VitalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalApp.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 			children = (
 				77AC2ABB2BFA9490007E4F77 /* MockData.swift */,
 				77AC2AC52BFEB630007E4F77 /* Constants.swift */,
+				777053192C35D52600043020 /* TabItem.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 				77AC2AC32BFA96B0007E4F77 /* DashboardView.swift */,
 				77AC2AC12BFA95CB007E4F77 /* AccountView.swift */,
 				775A77DB2C022CCF00A8ED06 /* HealthKitPermissionView.swift */,
+				777053152C35D48C00043020 /* TabBar.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -275,9 +281,11 @@
 				77AC2AB32BFA914E007E4F77 /* AppTabView.swift in Sources */,
 				77C8D7472C190D7200B3C8A2 /* HeartRateManager.swift in Sources */,
 				77AC2AA32BFA9021007E4F77 /* VitalApp.swift in Sources */,
+				777053162C35D48C00043020 /* TabBar.swift in Sources */,
 				77AC2AC42BFA96B0007E4F77 /* DashboardView.swift in Sources */,
 				777053102C3582BA00043020 /* OnboardScreen.swift in Sources */,
 				77AC2AC62BFEB630007E4F77 /* Constants.swift in Sources */,
+				7770531A2C35D52600043020 /* TabItem.swift in Sources */,
 				77AC2AC22BFA95CB007E4F77 /* AccountView.swift in Sources */,
 				77AC2AB92BFA93C1007E4F77 /* HealthKitManager.swift in Sources */,
 				77AC2AC02BFA9592007E4F77 /* Date+Ext.swift in Sources */,

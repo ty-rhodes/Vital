@@ -12,6 +12,10 @@ enum Symbols {
     static let link      = Image(systemName: "link")
 }
 
+enum Theme {
+    static let heartRateBackground = Color.pink.gradient
+}
+
 enum Hyperlinks {
     static let heartLink = URL(string: "https://www.heart.org/en/healthy-living/fitness/fitness-basics/target-heart-rates")
     static let stepsLink = URL(string: "https://www.nih.gov/news-events/nih-research-matters/number-steps-day-more-important-step-intensity")

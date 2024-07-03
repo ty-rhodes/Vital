@@ -96,6 +96,7 @@ struct DashboardView: View {
                         CaloriesListData()
                     }
                 }
+//                .background(Theme.heartRateBackground.opacity(0.1))
                 .onAppear {
                     isShowingPermissionPrimingSheet = !hasSeenPermissionPriming
                 }
