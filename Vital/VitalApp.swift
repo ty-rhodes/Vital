@@ -14,7 +14,7 @@ struct VitalApp: App {
     
     var body: some Scene {
         WindowGroup {
-            TabBar()
+            VitalTabBar()
                 .environment(hkmanager)
                 .preferredColorScheme(.light)
         }

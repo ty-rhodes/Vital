@@ -24,7 +24,6 @@ struct AccountView: View {
                                         .font(.system(size: 14, weight: .light))
                                 }
                             }
-                            
                             HStack {
                                 Symbols.link
                                 VStack(alignment: .leading) {
@@ -35,7 +34,6 @@ struct AccountView: View {
                                         .font(.system(size: 14, weight: .light))
                                 }
                             }
-                            
                             HStack {
                                 Symbols.link
                                 VStack(alignment: .leading) {
@@ -46,7 +44,6 @@ struct AccountView: View {
                                         .font(.system(size: 14, weight: .light))
                                 }
                             }
-
                         }
                         .foregroundStyle(.primary)
                     

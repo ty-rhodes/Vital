@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TabBar: View {
+struct VitalTabBar: View {
     @Environment(HealthKitManager.self) private var hkManager
     
     @State private var selectedTab: Tab = .dashboard
@@ -68,11 +68,11 @@ struct TabButton: View {
 }
 
 #Preview {
-    TabBar()
+    VitalTabBar()
         .environment(HealthKitManager())
 }
 
-private extension TabBar {
+private extension VitalTabBar {
     
     func didDismiss() {
         print("dismiss")

@@ -27,14 +27,14 @@ import Observation
     
     // MARK: - Functions
     func fetchRestingHeartRate() async throws -> [HealthMetric] {
-        let calendar = Calendar.current
-        let today = calendar.startOfDay(for: .now)
-        let endDate = calendar.date(byAdding: .day, value: 1, to: today)!
+        let calendar  = Calendar.current
+        let today     = calendar.startOfDay(for: .now)
+        let endDate   = calendar.date(byAdding: .day, value: 1, to: today)!
         let startDate = calendar.date(byAdding: .day, value: -28, to: endDate)
         
-        let queryPredicate = HKQuery.predicateForSamples(withStart: startDate, end: endDate)
+        let queryPredicate  = HKQuery.predicateForSamples(withStart: startDate, end: endDate)
         let samplePredicate = HKSamplePredicate.quantitySample(type: HKQuantityType(.restingHeartRate), predicate: queryPredicate)
-        let heartRateQuery = HKStatisticsCollectionQueryDescriptor(predicate: samplePredicate,
+        let heartRateQuery  = HKStatisticsCollectionQueryDescriptor(predicate: samplePredicate,
                                                                    options: .discreteAverage,
                                                                    anchorDate: endDate,
                                                                    intervalComponents: .init(day: 1))
@@ -57,14 +57,14 @@ import Observation
     }
     
     func fetchStepCount() async throws -> [HealthMetric] {
-        let calendar = Calendar.current
-        let today = calendar.startOfDay(for: .now)
-        let endDate = calendar.date(byAdding: .day, value: 1, to: today)!
+        let calendar  = Calendar.current
+        let today     = calendar.startOfDay(for: .now)
+        let endDate   = calendar.date(byAdding: .day, value: 1, to: today)!
         let startDate = calendar.date(byAdding: .day, value: -28, to: endDate)
         
-        let queryPredicate = HKQuery.predicateForSamples(withStart: startDate, end: endDate)
+        let queryPredicate  = HKQuery.predicateForSamples(withStart: startDate, end: endDate)
         let samplePredicate = HKSamplePredicate.quantitySample(type: HKQuantityType(.stepCount), predicate: queryPredicate)
-        let stepsQuery = HKStatisticsCollectionQueryDescriptor(predicate: samplePredicate,
+        let stepsQuery      = HKStatisticsCollectionQueryDescriptor(predicate: samplePredicate,
                                                                options: .cumulativeSum,
                                                                anchorDate: endDate,
                                                                intervalComponents: .init(day: 1))
@@ -87,16 +87,15 @@ import Observation
     }
     
     func fetchCalories() async throws -> [HealthMetric] {
-        let calendar = Calendar.current
-        let today = calendar.startOfDay(for: .now)
-        let endDate = calendar.date(byAdding: .day, value: 1, to: today)!
+        let calendar  = Calendar.current
+        let today     = calendar.startOfDay(for: .now)
+        let endDate   = calendar.date(byAdding: .day, value: 1, to: today)!
         let startDate = calendar.date(byAdding: .day, value: -28, to: endDate)
         
         
-        let queryPredicate = HKQuery.predicateForSamples(withStart: startDate, end: endDate)
+        let queryPredicate  = HKQuery.predicateForSamples(withStart: startDate, end: endDate)
         let samplePredicate = HKSamplePredicate.quantitySample(type: HKQuantityType(.activeEnergyBurned), predicate: queryPredicate)
-        
-        let caloriesQuery = HKStatisticsCollectionQueryDescriptor(predicate: samplePredicate,
+        let caloriesQuery   = HKStatisticsCollectionQueryDescriptor(predicate: samplePredicate,
                                                                   options: .cumulativeSum,
                                                                   anchorDate: endDate,
                                                                   intervalComponents: .init(day: 1)

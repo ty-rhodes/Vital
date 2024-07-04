@@ -68,31 +68,16 @@ struct DashboardView: View {
                     // MARK: - List Data
                     switch selectedStat {
                     case .heartrate:
-                        Text("Heart Rate List Data")
-                            .frame(height: 8)
+                        ListDataHeader(header: "Heart Rate List Data")
                             .foregroundStyle(.pink.gradient)
-                            .font(.title3)
-                            .shadow(color: .secondary.opacity(0.3), radius: 1, x: 1, y: 1)
-                        Divider()
-                            .frame(width: 350)
                         HeartRateListData()
                     case .steps:
-                        Text("Steps List Data")
-                            .frame(height: 8)
+                        ListDataHeader(header: "Steps List Data")
                             .foregroundStyle(.mint.gradient)
-                            .font(.title3)
-                            .shadow(color: .secondary.opacity(0.3), radius: 1, x: 1, y: 1)
-                        Divider()
-                            .frame(width: 350)
                         StepsListData()
                     case .calories:
-                        Text("Calories List Data")
-                            .frame(height: 8)
+                        ListDataHeader(header: "Calories List Data")
                             .foregroundStyle(.orange.gradient)
-                            .font(.title3)
-                            .shadow(color: .secondary.opacity(0.3), radius: 1, x: 1, y: 1)
-                        Divider()
-                            .frame(width: 350)
                         CaloriesListData()
                     }
                 }
@@ -116,5 +101,19 @@ struct DashboardView: View {
     NavigationStack {
         DashboardView(metric: .steps)
             .environment(HealthKitManager())
+    }
+}
+
+struct ListDataHeader: View {
+    
+    var header: String
+    
+    var body: some View {
+        Text(header)
+            .frame(height: 8)
+            .font(.title3)
+            .shadow(color: .secondary.opacity(0.3), radius: 1, x: 1, y: 1)
+        Divider()
+            .frame(width: 350)
     }
 }
