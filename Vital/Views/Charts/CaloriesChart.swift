@@ -46,7 +46,7 @@ struct CaloriesChart: View {
             .padding(.bottom, 12)
             // MARK: - Steps chart
             if chartData.isEmpty {
-                ChartEmptyView(systemImageName: "chart.bar", title: "No Data", description: "There is no calories burned data to pull from Health App")
+                ChartEmptyView(systemImageName: "chart.bar", title: "No Data", description: "There is no calories burned data to pull from the Health App")
             } else {
                 Chart {
                     if let selectedHealthMetric {
