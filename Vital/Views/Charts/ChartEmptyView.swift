@@ -14,7 +14,7 @@ struct ChartEmptyView: View {
     
     var body: some View {
         ContentUnavailableView {
-           Image(systemName: systemImageName)
+            Image(systemName: systemImageName)
                 .resizable()
                 .frame(width: 32, height: 32)
             Text(title)
@@ -23,7 +23,8 @@ struct ChartEmptyView: View {
                 .font(.footnote)
         }
         .foregroundStyle(.secondary)
-        .offset(y: -12)    }
+        .offset(y: -12)
+    }
 }
 
 #Preview {

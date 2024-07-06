@@ -31,6 +31,8 @@ struct CaloriesListData: View {
         }
         .padding(.horizontal)
         .listStyle(.inset)
+        .frame(height: 260)
+        .offset(y: -6)
         .foregroundStyle(.orange.gradient)
         .shadow(color: .primary.opacity(0.2), radius: 10, x: 0, y: 5)
         .task {

@@ -31,11 +31,11 @@ struct VitalTabBar: View {
                 }
             }
             .padding(.horizontal, 8)
-            .frame(width: 140, height: 26, alignment: .top)
+            .frame(width: 140, height: 24, alignment: .top)
             .multilineTextAlignment(.center)
             .padding()
             .foregroundStyle(.black)
-            .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 25, style: .continuous))
+            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 25, style: .continuous))
             .shadow(color: .secondary.opacity(0.3), radius: 6, x: 2, y: 5)
             .ignoresSafeArea()
         }
