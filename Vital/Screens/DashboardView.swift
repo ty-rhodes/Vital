@@ -31,7 +31,7 @@ struct DashboardView: View {
     @AppStorage("hasSeenPermissionPriming") private var hasSeenPermissionPriming = false
     
     @State private var isShowingPermissionPrimingSheet = false
-    @State private var selectedStat: HealthMetricContext = .heartrate
+    @State private var selectedStat: HealthMetricContext = .steps
     
     var metric: HealthMetricContext
     
@@ -82,6 +82,7 @@ struct DashboardView: View {
                     }
                 }
 //                .background(Theme.heartRateBackground.opacity(0.1))
+                .offset(y: -30)
                 .onAppear {
                     isShowingPermissionPrimingSheet = !hasSeenPermissionPriming
                 }
@@ -113,7 +114,9 @@ struct ListDataHeader: View {
             .frame(height: 8)
             .font(.title3)
             .shadow(color: .secondary.opacity(0.3), radius: 1, x: 1, y: 1)
+            .offset(y: -10)
         Divider()
-            .frame(width: 350)
+            .frame(width: 340)
+            .offset(y: -6)
     }
 }
