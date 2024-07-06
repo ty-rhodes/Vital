@@ -28,6 +28,7 @@ struct HeartRateChart: View {
         let totalSteps = chartData.reduce(0) { $0 + $1.value }
         return totalSteps/Double(chartData.count)
     }
+    
     var body: some View {
         VStack {
             // MARK: - Heart Rate Chart Header
@@ -47,6 +48,7 @@ struct HeartRateChart: View {
             
             if chartData.isEmpty {
                 ChartEmptyView(systemImageName: "chart.bar", title: "No Data", description: "There is no resting heart rate data to pull from the Health App")
+                    .frame(height: 160)
             } else {
                 Chart {
                     if let selectedHealthMetric {
@@ -72,7 +74,7 @@ struct HeartRateChart: View {
                         .opacity(rawSelectedDate == nil || steps.date == selectedHealthMetric?.date ? 1 : 0.3)
                     }
                 }
-                .frame(height: 220)
+//                .frame(height: 220)
                 .shadow(color: .secondary.opacity(0.3), radius: 1, x: 1, y: 1)
                 .chartXSelection(value: $rawSelectedDate.animation(.easeInOut))
                 .chartXAxis {
@@ -88,6 +90,7 @@ struct HeartRateChart: View {
                         AxisValueLabel((value.as(Double.self) ?? 0).formatted(.number.notation(.compactName)))
                     }
                 }
+                .frame(height: 160)
             }
         }
         .padding()

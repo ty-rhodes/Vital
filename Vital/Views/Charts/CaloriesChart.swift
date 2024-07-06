@@ -47,6 +47,8 @@ struct CaloriesChart: View {
             // MARK: - Steps chart
             if chartData.isEmpty {
                 ChartEmptyView(systemImageName: "chart.bar", title: "No Data", description: "There is no calories burned data to pull from the Health App")
+                    .frame(height: 160)
+
             } else {
                 Chart {
                     if let selectedHealthMetric {
@@ -72,7 +74,7 @@ struct CaloriesChart: View {
                         .opacity(rawSelectedDate == nil || calories.date == selectedHealthMetric?.date ? 1 : 0.3)
                     }
                 }
-                .frame(height: 220)
+//                .frame(height: 220)
                 .shadow(color: .secondary.opacity(0.3), radius: 1, x: 1, y: 1)
                 .chartXSelection(value: $rawSelectedDate.animation(.easeInOut))
                 .chartXAxis {
@@ -88,6 +90,7 @@ struct CaloriesChart: View {
                         AxisValueLabel((value.as(Double.self) ?? 0).formatted(.number.notation(.compactName)))
                     }
                 }
+                .frame(height: 160)
             }
         }
         .padding()
