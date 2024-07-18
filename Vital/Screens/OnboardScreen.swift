@@ -13,7 +13,7 @@ struct OnboardScreen: View {
     var body: some View {
         ZStack {
             LinearGradient(colors: [.pink, .mint], startPoint: .top, endPoint: .bottom)
-                .opacity(0.4)
+                .opacity(0.2)
                 .ignoresSafeArea()
             VStack(spacing: 15) {
                 Text("Welcome to \nVital")
