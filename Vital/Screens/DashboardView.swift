@@ -46,6 +46,7 @@ struct DashboardView: View {
                         // MARK: - Date Display
                         HStack {
                             Text(Date().displayFormat)
+                                .foregroundStyle(.secondary)
                             Spacer()
                         }
                         .padding(.horizontal)
