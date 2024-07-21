@@ -13,7 +13,7 @@ enum Symbols {
 }
 
 enum Theme {
-    static let heartRateBackground = Color.pink.gradient
+    static let primaryBackground = LinearGradient(colors: [.pink, .mint], startPoint: .top, endPoint: .bottom)
 }
 
 enum Hyperlinks {

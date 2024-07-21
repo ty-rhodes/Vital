@@ -38,6 +38,9 @@ struct DashboardView: View {
     var body: some View {
         NavigationStack {
             ZStack {
+                Theme.primaryBackground
+                    .opacity(0.2)
+                    .ignoresSafeArea()
                 VStack {
                     VStack {
                         // MARK: - Date Display

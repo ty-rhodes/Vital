@@ -12,7 +12,7 @@ struct OnboardScreen: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(colors: [.pink, .mint], startPoint: .top, endPoint: .bottom)
+            Theme.primaryBackground
                 .opacity(0.2)
                 .ignoresSafeArea()
             VStack(spacing: 15) {
