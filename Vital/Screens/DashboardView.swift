@@ -38,6 +38,9 @@ struct DashboardView: View {
     var body: some View {
         NavigationStack {
             ZStack {
+                Theme.primaryBackground
+                    .opacity(0.2)
+                    .ignoresSafeArea()
                 VStack {
                     VStack {
                         // MARK: - Date Display
@@ -81,19 +84,31 @@ struct DashboardView: View {
                         CaloriesListData()
                     }
                 }
-//                .background(Theme.heartRateBackground.opacity(0.1))
                 .offset(y: -30)
                 .onAppear {
                     isShowingPermissionPrimingSheet = !hasSeenPermissionPriming
                 }
                 .navigationTitle("Health Data")
                 .navigationBarTitleDisplayMode(.inline)
-                .sheet(isPresented: $isShowingPermissionPrimingSheet, onDismiss: {
+                .fullScreenCover(isPresented: $isShowingPermissionPrimingSheet, onDismiss: {
                     // fetch health data
+                    fetchHealthData()
                 }, content: {
                     HealthKitPermissionView(hasSeen: $hasSeenPermissionPriming)
             })
             }
+        }
+    }
+    
+    private func fetchHealthData() {
+        Task {
+            async let heartRate = hkManager.fetchRestingHeartRate()
+            async let steps = hkManager.fetchStepCount()
+            async let calories = hkManager.fetchCalories()
+            
+            hkManager.heartRateData = try await heartRate
+            hkManager.stepData = try await steps
+            hkManager.calorieData = try await calories
         }
     }
 }

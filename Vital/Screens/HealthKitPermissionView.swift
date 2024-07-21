@@ -41,14 +41,13 @@ This app displays your resting heart rate, steps, and calories burned data in in
                 isShowingHealthKitPermissions = true
             }
             .frame(width: 200, height: 50)
-            .background(Color.red.gradient)
+            .background(Color.pink.gradient)
             .foregroundStyle(.white.gradient)
             .font(.system(size: 16, weight: .semibold))
             .cornerRadius(16)
             .controlSize(.large)
         }
         .padding(30)
-        .interactiveDismissDisabled()
         .onAppear { hasSeen = true }
         .healthDataAccessRequest(store: hkManager.store,
                                  shareTypes: hkManager.types,
