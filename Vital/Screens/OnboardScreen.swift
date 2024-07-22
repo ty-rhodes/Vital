@@ -10,6 +10,8 @@ import SwiftUI
 struct OnboardScreen: View {
     @AppStorage("isFirstTime") private var isFirstTime: Bool = true
     
+    @Binding var hasCompletedOnboarding: Bool
+    
     var body: some View {
         ZStack {
             Theme.primaryBackground
@@ -22,7 +24,7 @@ struct OnboardScreen: View {
                     .padding(.top, 65)
                     .padding(.bottom, 35)
                 
-                // Points View
+                // MARK: - Points View
                 VStack(alignment: .leading, spacing: 25) {
                     PointView(symbol: "heart.text.square",
                               title: "Sync Apple Health Data",
@@ -42,7 +44,7 @@ struct OnboardScreen: View {
                 Spacer()
                 
                 Button(action: {
-                    isFirstTime = false
+                    hasCompletedOnboarding = true
                 }, label: {
                     Text("Get Started")
                         .frame(width: 350, height: 50)
@@ -83,5 +85,5 @@ struct OnboardScreen: View {
 }
 
 #Preview {
-    OnboardScreen()
+    OnboardScreen(hasCompletedOnboarding: .constant(true))
 }

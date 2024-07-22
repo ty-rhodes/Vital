@@ -46,6 +46,7 @@ struct DashboardView: View {
                         // MARK: - Date Display
                         HStack {
                             Text(Date().displayFormat)
+                                .foregroundStyle(.secondary)
                             Spacer()
                         }
                         .padding(.horizontal)
@@ -90,7 +91,7 @@ struct DashboardView: View {
                 }
                 .navigationTitle("Health Data")
                 .navigationBarTitleDisplayMode(.inline)
-                .fullScreenCover(isPresented: $isShowingPermissionPrimingSheet, onDismiss: {
+                .sheet(isPresented: $isShowingPermissionPrimingSheet, onDismiss: {
                     // fetch health data
                     fetchHealthData()
                 }, content: {

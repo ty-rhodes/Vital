@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		770FED452C2B7ADC0093180F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 770FED442C2B7ADC0093180F /* PrivacyInfo.xcprivacy */; };
+		774EF9132C4DE7E000DEC434 /* AppContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774EF9122C4DE7E000DEC434 /* AppContainerView.swift */; };
 		775A77DA2C022AB100A8ED06 /* StepsChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A77D92C022AB100A8ED06 /* StepsChart.swift */; };
 		775A77DC2C022CCF00A8ED06 /* HealthKitPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A77DB2C022CCF00A8ED06 /* HealthKitPermissionView.swift */; };
 		777053102C3582BA00043020 /* OnboardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7770530F2C3582BA00043020 /* OnboardScreen.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		770FED442C2B7ADC0093180F /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		774EF9122C4DE7E000DEC434 /* AppContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainerView.swift; sourceTree = "<group>"; };
 		775A77D92C022AB100A8ED06 /* StepsChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsChart.swift; sourceTree = "<group>"; };
 		775A77DB2C022CCF00A8ED06 /* HealthKitPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPermissionView.swift; sourceTree = "<group>"; };
 		775A77DD2C0231D600A8ED06 /* Vital.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vital.entitlements; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				77AC2AC12BFA95CB007E4F77 /* AccountView.swift */,
 				775A77DB2C022CCF00A8ED06 /* HealthKitPermissionView.swift */,
 				777053152C35D48C00043020 /* VitalTabBar.swift */,
+				774EF9122C4DE7E000DEC434 /* AppContainerView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				77AC2AC22BFA95CB007E4F77 /* AccountView.swift in Sources */,
 				77AC2AB92BFA93C1007E4F77 /* HealthKitManager.swift in Sources */,
 				77AC2AC02BFA9592007E4F77 /* Date+Ext.swift in Sources */,
+				774EF9132C4DE7E000DEC434 /* AppContainerView.swift in Sources */,
 				77EE5D6B2C24E584009A7FE3 /* CaloriesChart.swift in Sources */,
 				77BF6FE92C093F490049298E /* HeartRateChart.swift in Sources */,
 				775A77DA2C022AB100A8ED06 /* StepsChart.swift in Sources */,

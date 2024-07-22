@@ -37,7 +37,6 @@ struct CaloriesListData: View {
         .shadow(color: .primary.opacity(0.2), radius: 10, x: 0, y: 5)
         .task {
             do {
-//                await hkManager.fetchCalories()
                 try await hkManager.fetchCalories()
                 isShowingPermissionPrimingSheet = !hasSeenPermissionPriming
             } catch {
