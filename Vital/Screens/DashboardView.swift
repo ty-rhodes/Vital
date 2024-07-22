@@ -91,7 +91,7 @@ struct DashboardView: View {
                 }
                 .navigationTitle("Health Data")
                 .navigationBarTitleDisplayMode(.inline)
-                .fullScreenCover(isPresented: $isShowingPermissionPrimingSheet, onDismiss: {
+                .sheet(isPresented: $isShowingPermissionPrimingSheet, onDismiss: {
                     // fetch health data
                     fetchHealthData()
                 }, content: {
