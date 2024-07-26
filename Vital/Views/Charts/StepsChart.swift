@@ -75,7 +75,6 @@ struct StepsChart: View {
                         .opacity(rawSelectedDate == nil || steps.date == selectedHealthMetric?.date ? 1 : 0.3)
                     }
                 }
-//                .frame(height: 220)
                 .shadow(color: .secondary.opacity(0.3), radius: 1, x: 1, y: 1)
                 .chartXSelection(value: $rawSelectedDate.animation(.easeInOut))
                 .chartXAxis {
@@ -103,7 +102,6 @@ struct StepsChart: View {
                 selectedDay = newValue
             }
         }
-
     }
     
     // MARK: - Annotation View
